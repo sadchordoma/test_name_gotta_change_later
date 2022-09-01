@@ -1,4 +1,4 @@
-"""website_with_tash_rav_like_trello URL Configuration
+"""test_name_gotta_change_later URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/

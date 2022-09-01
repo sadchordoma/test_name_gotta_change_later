@@ -1,5 +1,5 @@
 """
-ASGI config for website_with_tash_rav_like_trello project.
+ASGI config for test_name_gotta_change_later project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'website_with_tash_rav_like_trello.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'test_name_gotta_change_later.settings')
 
 application = get_asgi_application()

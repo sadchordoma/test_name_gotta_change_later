@@ -6,7 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'website_with_tash_rav_like_trello.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'test_name_gotta_change_later.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
