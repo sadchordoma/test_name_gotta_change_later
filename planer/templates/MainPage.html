@@ -23,23 +23,25 @@
         </form>
     </div>
     <div class="containter">
-        <div class="block">
-            <div class="day">monday</div>
-            <div class="workspace">
+        {% for i in card %}
+            <div class="block">
+                <div class="day">{{ i.name }}</div>
                 {% for n in name %}
                 <div class="work">{{ n.name }}</div>
                 {% endfor%}
             </div>
-        </div>
+        {% endfor %}
         <div class="block">
             <div class="day">tuesday</div>
         </div>
         <div class="block">
             <div class="day">wednesday</div>
         </div>
-        <div class="block">
-            <div class="day">thursday</div>
-        </div>
+        <form action="">
+            <div class="newCard">
+                <button class="plusCard" href>+</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
