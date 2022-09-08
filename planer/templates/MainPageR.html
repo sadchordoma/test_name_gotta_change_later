@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/StyleR.css">
+</head>
+
+<body>
+    <div class="title">
+        <p class="title__text">plans for week</p>
+    </div>
+    <form class="writeWindow">
+        <input class="writeWindow__input" type="text">
+        <button class="writeWindow__btn">+</button>
+    </form>
+    <div class="carts container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 carts__item carts__item-first">
+                <div class="carts__title">
+                    <h3>Create new cart</h3>
+                </div>
+                <div class="carts__body carts__body-f">         
+                    <button type="button" class="carts__plus" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        +
+                    </button>   
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Create new cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                        <h6 class="modal-body__text text-center">Name of the cart</h6>
+                                        <input type="text" class="modal-body__input">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Create cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 carts__item">
+                <div class="carts__title">
+                    <h3>Вторник</h3>
+                </div>
+                <div class="carts__body">
+                    <ul class="carts__list list">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 carts__item">
+                <div class="carts__title">
+                    <h3>Вторник</h3>
+                </div>
+                <div class="carts__body">
+                    <ul class="carts__list list">
+                        <li>Сделать дз</li>
+                        <li>Сходить в зал</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 carts__item">
+                <div class="carts__title">
+                    <h3>Вторник</h3>
+                </div>
+                <div class="carts__body">
+                    <ul class="carts__list list">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 carts__item">
+                <div class="carts__title">
+                    <h3>Вторник</h3>
+                </div>
+                <div class="carts__body">
+                    <ul class="carts__list list">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 carts__item">
+                <div class="carts__title">
+                    <h3>Вторник</h3>
+                </div>
+                <div class="carts__body">
+                    <ul class="carts__list list">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 carts__item">
+                <div class="carts__title">
+                    <h3>Вторник</h3>
+                </div>
+                <div class="carts__body">
+                    <ul class="carts__list list">
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
