@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/RavilStyle.css' %}">
 </head>
 
 <body>
@@ -15,7 +16,8 @@
         <p class="title__text">plans for week</p>
     </div>
     <form class="writeWindow">
-        <input class="writeWindow__input" type="text">
+        {% csrf_token %}
+        {{ form.name }}
         <button class="writeWindow__btn">+</button>
     </form>
     <div class="carts container">
@@ -54,13 +56,16 @@
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12 carts__item">
+                {% for n in name %}
                 <div class="carts__title">
                     <h3>Вторник</h3>
                 </div>
                 <div class="carts__body">
                     <ul class="carts__list list">
+                        {{ n.name }}
                     </ul>
                 </div>
+                {% endfor %}
             </div>
             <div class="col-lg-4 col-sm-12 carts__item">
                 <div class="carts__title">

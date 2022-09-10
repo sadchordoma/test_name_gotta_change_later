@@ -14,5 +14,5 @@ def MainPage(request):
 	form =  ProductForm()
 	FormCard = PlusCard.objects.all()
 	name = Product.objects.all()
-	return render(request,"MainRavil.html",{'form':form,'name':name,'card':FormCard})
+	return render(request,"index.html",{'form':form,'name':name,'card':FormCard})
 
