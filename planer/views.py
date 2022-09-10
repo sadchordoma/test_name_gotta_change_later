@@ -14,5 +14,5 @@ def MainPage(request):
 	form =  ProductForm()
 	FormCard = PlusCard.objects.all()
 	name = Product.objects.all()
-	return render(request,"index.html",{'form':form,'name':name,'card':FormCard})
+	return render(request,"MainPageR.html",{'form':form,'name':name,'card':FormCard})
 
