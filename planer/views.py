@@ -6,13 +6,22 @@ from django.http import HttpResponseRedirect
 
 
 def MainPage(request):
-	if request.method == 'POST':
+	form =  ProductForm()
+	cardForm = CardForm()
+	if request.method == 'POST' and 'add_new_card' in request.POST:
+		cardForm = CardForm(request.POST)
+		if cardForm.is_valid():
+			cardForm.save()
+			return HttpResponseRedirect('/')
+	if request.method == 'POST' and 'add_new_zam' in request.POST:
 		form = ProductForm(request.POST)
+		print('a')
 		if form.is_valid():
 			form.save()
 			return HttpResponseRedirect('/')
-	form =  ProductForm()
-	FormCard = PlusCard.objects.all()
+
+
 	name = Product.objects.all()
-	return render(request,"MainPageR.html",{'form':form,'name':name,'card':FormCard})
+	return render(request,"MainPageR.html",{'form':form,'name':name,
+											'cardForm':cardForm})
 
